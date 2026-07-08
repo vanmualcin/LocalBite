@@ -25,7 +25,7 @@
   --lb-shadow-soft: rgba(32, 53, 46, 0.06);
   --lb-topbar-start: #fdfbf4;
   --lb-topbar-end: #dfe8d7;
-  --lb-topbar-safe: var(--lb-topbar-start);
+  --lb-topbar-safe: #fdfbf4;
   --lb-chip: #e6eddd;
   --lb-ink: var(--lb-text);
   --lb-ink-soft: var(--lb-text-soft);
@@ -68,6 +68,7 @@
   --lb-shadow-soft: rgba(32, 54, 56, 0.06);
   --lb-topbar-start: #fbfefd;
   --lb-topbar-end: #d7e8e5;
+  --lb-topbar-safe: #fbfefd;
   --lb-chip: #dfecea;
 }
 
@@ -91,6 +92,7 @@
   --lb-shadow-soft: rgba(44, 51, 47, 0.06);
   --lb-topbar-start: #fffdf8;
   --lb-topbar-end: #eadfd2;
+  --lb-topbar-safe: #fffdf8;
   --lb-chip: #eee4d7;
 }
 
@@ -114,6 +116,7 @@
   --lb-shadow-soft: rgba(44, 51, 47, 0.05);
   --lb-topbar-start: #ffffff;
   --lb-topbar-end: #e5e8e2;
+  --lb-topbar-safe: #ffffff;
   --lb-chip: #e6e8e0;
 }
 
@@ -140,6 +143,7 @@
   --lb-shadow-soft: rgba(0, 0, 0, 0.24);
   --lb-topbar-start: #18221f;
   --lb-topbar-end: #24362f;
+  --lb-topbar-safe: #18221f;
   --lb-chip: #263a32;
 }
 
@@ -166,6 +170,7 @@
   --lb-shadow-soft: rgba(0, 0, 0, 0.25);
   --lb-topbar-start: #171d20;
   --lb-topbar-end: #24363a;
+  --lb-topbar-safe: #171d20;
   --lb-chip: #26383c;
 }
 
@@ -192,6 +197,7 @@
   --lb-shadow-soft: rgba(0, 0, 0, 0.25);
   --lb-topbar-start: #231d27;
   --lb-topbar-end: #342b38;
+  --lb-topbar-safe: #231d27;
   --lb-chip: #3a3140;
 }
 

@@ -46,16 +46,6 @@ const brandIconUrl = `${import.meta.env.BASE_URL}icons/localbite-page-logo-maste
   z-index: 1040;
 }
 
-.topbar::before {
-  background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.18), transparent 42%, var(--lb-section-soft)),
-    linear-gradient(135deg, var(--lb-topbar-start) 0%, var(--lb-surface) 42%, var(--lb-topbar-end) 100%);
-  content: "";
-  inset: var(--lb-safe-area-top) 0 0;
-  pointer-events: none;
-  position: absolute;
-}
-
 .topbar > .container-fluid {
   min-height: var(--topbar-height);
   position: relative;
