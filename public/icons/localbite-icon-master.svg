@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="88" fill="#faf2dd"/>
+  <rect x="370" y="137" width="58" height="76" rx="18" fill="#db602a"/>
+  <rect x="370" y="221" width="58" height="76" rx="18" fill="#e8b032"/>
+  <rect x="370" y="305" width="58" height="76" rx="18" fill="#768d5b"/>
+  <rect x="105" y="70" width="285" height="368" rx="32" fill="#fff9ec" stroke="#e1d2b4" stroke-width="3"/>
+  <line x1="130" y1="86" x2="130" y2="420" stroke="#d6c6a5" stroke-width="2"/>
+  <g fill="#2a432a">
+    <rect x="71" y="124" width="70" height="18" rx="8"/>
+    <rect x="71" y="196" width="70" height="18" rx="8"/>
+    <rect x="71" y="268" width="70" height="18" rx="8"/>
+    <rect x="71" y="340" width="70" height="18" rx="8"/>
+  </g>
+  <g fill="#faf2dd">
+    <rect x="84" y="127" width="41" height="12" rx="5"/>
+    <rect x="84" y="199" width="41" height="12" rx="5"/>
+    <rect x="84" y="271" width="41" height="12" rx="5"/>
+    <rect x="84" y="343" width="41" height="12" rx="5"/>
+  </g>
+  <text x="158" y="184" fill="#2a432a" font-size="38" font-weight="700" font-family="Georgia,serif">LocalBite</text>
+  <path d="M250 273 C211 235 224 205 250 220 C276 205 289 235 250 273Z" fill="#db602a"/>
+  <g fill="#486034">
+    <rect x="184" y="293" width="132" height="19" rx="9.5"/>
+    <path d="M195 306 L305 306 L283 367 L217 367 Z"/>
+    <rect x="217" y="361" width="66" height="10" rx="5"/>
+  </g>
+</svg>
