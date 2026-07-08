@@ -4,8 +4,6 @@ LocalBite is a local-first recipe creator built as a Vue, TypeScript, Bootstrap,
 
 ## Local Development
 
-The project was requested with Bun first and pnpm as the fallback. Bun was not available in this workspace, so the lockfile and scripts use pnpm.
-
 ```sh
 pnpm install
 pnpm dev
