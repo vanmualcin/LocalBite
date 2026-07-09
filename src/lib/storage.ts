@@ -1,7 +1,7 @@
 import type { Category, Recipe } from '../types'
 import { normalizeRecipe } from './recipeMigration'
 
-const DB_NAME = 'localbite'
+const DB_NAME = 'hungry-codex'
 const DB_VERSION = 1
 const CATEGORY_STORE = 'categories'
 const RECIPE_STORE = 'recipes'

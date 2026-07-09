@@ -100,7 +100,7 @@ function detailsPreview(recipe: RecipeCardView): string {
     <span class="material-icons empty-icon" aria-hidden="true">restaurant</span>
     <h2 class="h4">{{ hasRecipes ? 'No recipes match these categories' : 'No recipes yet' }}</h2>
     <p class="text-secondary mb-0">
-      {{ isFiltered ? 'Clear category filters to see everything.' : 'Create your first recipe and LocalBite will keep it on this device.' }}
+      {{ isFiltered ? 'Clear category filters to see everything.' : 'Create your first recipe and Hungry Codex will keep it on this device.' }}
     </p>
     <button v-if="!hasRecipes" class="btn btn-success d-inline-flex align-items-center gap-2" type="button" @click="emit('add-recipe')">
       <span class="material-icons" aria-hidden="true">add</span>
@@ -116,9 +116,9 @@ function detailsPreview(recipe: RecipeCardView): string {
 }
 
 .recipe-card {
-  background: var(--lb-surface);
+  background: var(--hc-surface);
   border-radius: 8px;
-  color: var(--lb-text);
+  color: var(--hc-text);
   overflow: hidden;
   position: relative;
   transition:
@@ -129,13 +129,13 @@ function detailsPreview(recipe: RecipeCardView): string {
 
 .recipe-card:hover,
 .recipe-card:focus-within {
-  border-color: var(--lb-border-strong) !important;
-  box-shadow: 0 6px 18px var(--lb-shadow-soft);
+  border-color: var(--hc-border-strong) !important;
+  box-shadow: 0 6px 18px var(--hc-shadow-soft);
   transform: translateY(-1px);
 }
 
 .recipe-open-link {
-  color: var(--lb-text);
+  color: var(--hc-text);
   display: grid;
   grid-template-columns: 132px minmax(0, 1fr);
   min-height: 100%;
@@ -143,21 +143,21 @@ function detailsPreview(recipe: RecipeCardView): string {
 
 .recipe-open-link:hover,
 .recipe-open-link:focus {
-  color: var(--lb-text);
+  color: var(--hc-text);
 }
 
 .recipe-open-link:focus-visible {
-  outline: 3px solid var(--lb-focus);
+  outline: 3px solid var(--hc-focus);
   outline-offset: -3px;
 }
 
 .recipe-card-title {
-  color: var(--lb-text);
+  color: var(--hc-text);
   font-weight: 750;
 }
 
 .recipe-media {
-  background: var(--lb-section);
+  background: var(--hc-section);
   min-height: 148px;
 }
 
@@ -169,7 +169,7 @@ function detailsPreview(recipe: RecipeCardView): string {
 
 .recipe-media-placeholder {
   align-items: center;
-  color: var(--lb-text-soft);
+  color: var(--hc-text-soft);
   display: flex;
   height: 100%;
   justify-content: center;
@@ -203,12 +203,12 @@ function detailsPreview(recipe: RecipeCardView): string {
 }
 
 .ingredients-preview {
-  color: var(--lb-text-soft);
+  color: var(--hc-text-soft);
   font-size: 0.95rem;
 }
 
 .details-preview {
-  color: var(--lb-warm);
+  color: var(--hc-warm);
   font-size: 0.9rem;
   font-weight: 650;
 }
@@ -220,7 +220,7 @@ function detailsPreview(recipe: RecipeCardView): string {
 }
 
 .recipe-meta {
-  border-top: 1px solid var(--lb-border);
+  border-top: 1px solid var(--hc-border);
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -228,25 +228,25 @@ function detailsPreview(recipe: RecipeCardView): string {
 }
 
 .recipe-meta dt {
-  color: var(--lb-muted);
+  color: var(--hc-muted);
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .recipe-meta dd {
-  color: var(--lb-warm);
+  color: var(--hc-warm);
   font-size: 0.875rem;
   margin: 0;
 }
 
 .btn-success {
-  --bs-btn-bg: var(--lb-accent);
-  --bs-btn-border-color: var(--lb-accent);
-  --bs-btn-hover-bg: var(--lb-accent-dark);
-  --bs-btn-hover-border-color: var(--lb-accent-dark);
-  --bs-btn-active-bg: var(--lb-accent-dark);
-  --bs-btn-active-border-color: var(--lb-accent-dark);
+  --bs-btn-bg: var(--hc-accent);
+  --bs-btn-border-color: var(--hc-accent);
+  --bs-btn-hover-bg: var(--hc-accent-dark);
+  --bs-btn-hover-border-color: var(--hc-accent-dark);
+  --bs-btn-active-bg: var(--hc-accent-dark);
+  --bs-btn-active-border-color: var(--hc-accent-dark);
 }
 
 .btn .material-icons {
@@ -266,7 +266,7 @@ function detailsPreview(recipe: RecipeCardView): string {
 }
 
 .empty-icon {
-  color: var(--lb-text-soft);
+  color: var(--hc-text-soft);
   font-size: 44px;
 }
 

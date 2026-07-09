@@ -1,6 +1,6 @@
-# LocalBite
+# Hungry Codex
 
-LocalBite is a local-first recipe creator built as a Vue, TypeScript, Bootstrap, and Material Icons progressive web app.
+Hungry Codex is a local-first recipe creator built as a Vue, TypeScript, Bootstrap, and Material Icons progressive web app.
 
 ## Local Development
 

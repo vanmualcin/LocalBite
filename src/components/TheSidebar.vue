@@ -128,9 +128,9 @@ function handleThemeChange(event: Event): void {
 <style scoped>
 .category-sidebar {
   flex: 0 0 280px;
-  height: calc(100svh - var(--lb-topbar-total-height));
+  height: calc(100svh - var(--hc-topbar-total-height));
   position: sticky;
-  top: var(--lb-topbar-total-height);
+  top: var(--hc-topbar-total-height);
   z-index: 1000;
   flex-direction: column;
 }
@@ -159,24 +159,24 @@ function handleThemeChange(event: Event): void {
 }
 
 .category-sidebar {
-  background: var(--lb-surface);
+  background: var(--hc-surface);
 }
 
 .category-row:hover,
 .category-row.is-selected {
-  background: var(--lb-section);
-  border-color: var(--lb-border-strong);
+  background: var(--hc-section);
+  border-color: var(--hc-border-strong);
 }
 
 .category-name {
-  color: var(--lb-text);
+  color: var(--hc-text);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .mobile-menu {
-  background: var(--lb-surface);
+  background: var(--hc-surface);
   display: flex;
   flex-direction: column;
   inset: 0;
@@ -186,11 +186,11 @@ function handleThemeChange(event: Event): void {
 
 .mobile-menu-header {
   align-items: center;
-  background: var(--lb-surface);
+  background: var(--hc-surface);
   display: flex;
   flex: 0 0 auto;
   justify-content: space-between;
-  padding: calc(14px + var(--lb-safe-area-top)) 16px 14px;
+  padding: calc(14px + var(--hc-safe-area-top)) 16px 14px;
 }
 
 .mobile-menu-body {
@@ -214,7 +214,7 @@ function handleThemeChange(event: Event): void {
 }
 
 .theme-label {
-  color: var(--lb-muted);
+  color: var(--hc-muted);
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -231,8 +231,8 @@ function handleThemeChange(event: Event): void {
 }
 
 .theme-swatches {
-  background: var(--lb-control);
-  border: 1px solid var(--lb-border-strong);
+  background: var(--hc-control);
+  border: 1px solid var(--hc-border-strong);
   border-radius: 999px;
   display: inline-grid;
   gap: 2px;
@@ -247,12 +247,12 @@ function handleThemeChange(event: Event): void {
 }
 
 .mobile-theme-settings {
-  padding-bottom: calc(16px + var(--lb-safe-area-bottom));
+  padding-bottom: calc(16px + var(--hc-safe-area-bottom));
 }
 
 .icon-button {
   align-items: center;
-  color: var(--lb-text);
+  color: var(--hc-text);
   display: inline-flex;
   height: 40px;
   justify-content: center;

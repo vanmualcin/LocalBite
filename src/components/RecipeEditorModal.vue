@@ -391,7 +391,7 @@ function formatList(items: string[]): string {
 
 <template>
   <div v-if="show" class="modal-backdrop fade show"></div>
-  <div v-if="show" class="modal localbite-modal recipe-modal show" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="recipe-modal-title">
+  <div v-if="show" class="modal hungry-codex-modal recipe-modal show" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="recipe-modal-title">
     <div class="modal-dialog modal-xl modal-dialog-scrollable recipe-modal-dialog">
       <form class="modal-content recipe-editor" novalidate @submit.prevent="submitRecipe">
         <div class="modal-header recipe-editor-header">
@@ -690,7 +690,7 @@ function formatList(items: string[]): string {
 </template>
 
 <style scoped>
-.localbite-modal {
+.hungry-codex-modal {
   display: block;
 }
 
@@ -700,19 +700,19 @@ function formatList(items: string[]): string {
 }
 
 .modal-content {
-  border: 1px solid var(--lb-border);
+  border: 1px solid var(--hc-border);
   border-radius: 8px;
   overflow: hidden;
 }
 
 .recipe-editor {
-  background: var(--lb-surface);
+  background: var(--hc-surface);
 }
 
 .recipe-editor-header {
   align-items: flex-start;
-  background: var(--lb-surface);
-  border-bottom: 1px solid var(--lb-border);
+  background: var(--hc-surface);
+  border-bottom: 1px solid var(--hc-border);
   gap: 14px;
   padding: 16px 18px;
 }
@@ -723,7 +723,7 @@ function formatList(items: string[]): string {
 }
 
 .header-copy h2 {
-  color: var(--lb-text);
+  color: var(--hc-text);
   font-size: 1.25rem;
   font-weight: 850;
   line-height: 1.15;
@@ -731,7 +731,7 @@ function formatList(items: string[]): string {
 }
 
 .header-copy p {
-  color: var(--lb-muted);
+  color: var(--hc-muted);
   font-size: 0.92rem;
   line-height: 1.35;
   margin: 0;
@@ -751,7 +751,7 @@ function formatList(items: string[]): string {
 }
 
 .editor-section {
-  background: var(--lb-section-soft);
+  background: var(--hc-section-soft);
   border-radius: 8px;
   display: grid;
   gap: 14px;
@@ -759,7 +759,7 @@ function formatList(items: string[]): string {
 }
 
 .section-heading {
-  color: var(--lb-text);
+  color: var(--hc-text);
   font-size: 1.05rem;
   font-weight: 850;
   line-height: 1.2;
@@ -767,12 +767,12 @@ function formatList(items: string[]): string {
 }
 
 .required-mark {
-  color: var(--lb-danger);
+  color: var(--hc-danger);
   font-weight: 850;
 }
 
 .optional-label {
-  color: var(--lb-muted);
+  color: var(--hc-muted);
   font-size: 0.76rem;
   font-weight: 750;
   text-transform: uppercase;
@@ -787,7 +787,7 @@ function formatList(items: string[]): string {
 }
 
 .recipe-name-input {
-  color: var(--lb-text);
+  color: var(--hc-text);
   font-size: 1.2rem;
   font-weight: 750;
   min-height: 48px;
@@ -817,8 +817,8 @@ function formatList(items: string[]): string {
 
 .photo-empty-state {
   align-items: center;
-  background: var(--lb-surface);
-  border: 1px dashed var(--lb-border-strong);
+  background: var(--hc-surface);
+  border: 1px dashed var(--hc-border-strong);
   border-radius: 8px;
   display: flex;
   flex-wrap: wrap;
@@ -828,14 +828,14 @@ function formatList(items: string[]): string {
 }
 
 .photo-empty-state p {
-  color: var(--lb-muted);
+  color: var(--hc-muted);
   font-size: 0.9rem;
   margin: 0;
 }
 
 .photo-selected-state {
   align-items: center;
-  background: var(--lb-surface);
+  background: var(--hc-surface);
   border-radius: 8px;
   display: grid;
   gap: 12px;
@@ -858,7 +858,7 @@ function formatList(items: string[]): string {
 }
 
 .photo-selected-copy > span {
-  color: var(--lb-text-soft);
+  color: var(--hc-text-soft);
   font-size: 0.9rem;
   font-weight: 700;
   overflow: hidden;
@@ -876,7 +876,7 @@ function formatList(items: string[]): string {
 
 .remove-text-button {
   box-shadow: none !important;
-  color: var(--lb-warm) !important;
+  color: var(--hc-warm) !important;
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -914,18 +914,18 @@ function formatList(items: string[]): string {
 }
 
 .prep-toggle {
-  color: var(--lb-text-soft);
+  color: var(--hc-text-soft);
   font-size: 0.92rem;
   font-weight: 750;
 }
 
 .step-phase {
-  border-top: 1px solid var(--lb-border);
+  border-top: 1px solid var(--hc-border);
   padding-top: 14px;
 }
 
 .phase-header h4 {
-  color: var(--lb-text-soft);
+  color: var(--hc-text-soft);
   font-size: 0.93rem;
   font-weight: 800;
   margin: 0;
@@ -945,9 +945,9 @@ function formatList(items: string[]): string {
 
 .step-number {
   align-items: center;
-  background: var(--lb-chip);
+  background: var(--hc-chip);
   border-radius: 999px;
-  color: var(--lb-text-soft);
+  color: var(--hc-text-soft);
   display: inline-flex;
   font-size: 0.82rem;
   font-weight: 850;
@@ -965,14 +965,14 @@ function formatList(items: string[]): string {
 }
 
 .timer-toggle {
-  color: var(--lb-text-soft);
+  color: var(--hc-text-soft);
   font-size: 0.82rem;
   font-weight: 750;
 }
 
 .timer-minutes {
   align-items: center;
-  color: var(--lb-text-soft);
+  color: var(--hc-text-soft);
   display: inline-grid;
   font-size: 0.84rem;
   font-weight: 750;
@@ -988,7 +988,7 @@ function formatList(items: string[]): string {
 }
 
 .details-section {
-  background: var(--lb-section-soft);
+  background: var(--hc-section-soft);
 }
 
 .section-disclosure {
@@ -1008,13 +1008,13 @@ function formatList(items: string[]): string {
 
 .section-disclosure:focus-visible {
   border-radius: 8px;
-  box-shadow: 0 0 0 3px var(--lb-focus);
+  box-shadow: 0 0 0 3px var(--hc-focus);
   outline: 0;
 }
 
 .disclosure-meta {
   align-items: center;
-  color: var(--lb-muted);
+  color: var(--hc-muted);
   display: inline-flex;
   gap: 4px;
 }
@@ -1031,7 +1031,7 @@ function formatList(items: string[]): string {
 }
 
 .unit-input span {
-  color: var(--lb-muted);
+  color: var(--hc-muted);
   font-size: 0.88rem;
   font-weight: 650;
 }
@@ -1045,7 +1045,7 @@ function formatList(items: string[]): string {
 }
 
 .category-dropdown-menu {
-  border: 1px solid var(--lb-border);
+  border: 1px solid var(--hc-border);
   border-radius: 8px;
   display: grid;
   gap: 2px;
@@ -1070,7 +1070,7 @@ function formatList(items: string[]): string {
 }
 
 .category-dropdown-item:hover {
-  background: var(--lb-section);
+  background: var(--hc-section);
 }
 
 .icon-only {
@@ -1089,16 +1089,16 @@ function formatList(items: string[]): string {
 
 .recipe-editor-footer {
   align-items: center;
-  background: var(--lb-surface);
-  border-top: 1px solid var(--lb-border);
-  box-shadow: 0 -4px 14px var(--lb-shadow-soft);
+  background: var(--hc-surface);
+  border-top: 1px solid var(--hc-border);
+  box-shadow: 0 -4px 14px var(--hc-shadow-soft);
   gap: 12px;
   justify-content: space-between;
   padding: 12px 18px;
 }
 
 .save-hint {
-  color: var(--lb-warm);
+  color: var(--hc-warm);
   font-size: 0.86rem;
   font-weight: 700;
   margin: 0;
@@ -1110,10 +1110,10 @@ function formatList(items: string[]): string {
 }
 
 .save-button:disabled {
-  background: color-mix(in srgb, var(--lb-muted) 18%, transparent) !important;
-  border-color: var(--lb-border-strong) !important;
+  background: color-mix(in srgb, var(--hc-muted) 18%, transparent) !important;
+  border-color: var(--hc-border-strong) !important;
   box-shadow: none !important;
-  color: color-mix(in srgb, var(--lb-text) 58%, transparent) !important;
+  color: color-mix(in srgb, var(--hc-text) 58%, transparent) !important;
   cursor: not-allowed;
   opacity: 1;
   text-shadow: none;

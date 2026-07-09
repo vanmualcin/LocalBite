@@ -17,7 +17,8 @@
     <rect x="84" y="271" width="41" height="12" rx="5"/>
     <rect x="84" y="343" width="41" height="12" rx="5"/>
   </g>
-  <text x="158" y="184" fill="#2a432a" font-size="38" font-weight="700" font-family="Georgia,serif">LocalBite</text>
+  <text x="158" y="164" fill="#2a432a" font-size="36" font-weight="700" font-family="Georgia,serif">Hungry</text>
+  <text x="158" y="204" fill="#2a432a" font-size="36" font-weight="700" font-family="Georgia,serif">Codex</text>
   <path d="M250 273 C211 235 224 205 250 220 C276 205 289 235 250 273Z" fill="#db602a"/>
   <g fill="#486034">
     <rect x="184" y="293" width="132" height="19" rx="9.5"/>

@@ -192,16 +192,16 @@ function padTimer(value: number): string {
 
 <style scoped>
 .cooking-backdrop {
-  background: color-mix(in srgb, var(--lb-text) 48%, transparent);
+  background: color-mix(in srgb, var(--hc-text) 48%, transparent);
   inset: 0;
   position: fixed;
   z-index: 1190;
 }
 
 .cooking-mode {
-  background: var(--lb-bg);
+  background: var(--hc-bg);
   border-radius: 8px;
-  box-shadow: 0 20px 56px var(--lb-shadow);
+  box-shadow: 0 20px 56px var(--hc-shadow);
   display: flex;
   flex-direction: column;
   inset: 12px;
@@ -213,7 +213,7 @@ function padTimer(value: number): string {
 
 .cooking-header {
   align-items: flex-start;
-  background: linear-gradient(135deg, var(--lb-topbar-start) 0%, var(--lb-surface) 48%, var(--lb-topbar-end) 100%);
+  background: linear-gradient(135deg, var(--hc-topbar-start) 0%, var(--hc-surface) 48%, var(--hc-topbar-end) 100%);
   display: flex;
   flex: 0 0 auto;
   gap: 12px;
@@ -222,7 +222,7 @@ function padTimer(value: number): string {
 }
 
 .cooking-header h2 {
-  color: var(--lb-text);
+  color: var(--hc-text);
   font-size: 1.35rem;
   font-weight: 850;
 }
@@ -240,7 +240,7 @@ function padTimer(value: number): string {
 }
 
 .cooking-section h3 {
-  color: var(--lb-text);
+  color: var(--hc-text);
   font-size: 1.1rem;
   font-weight: 850;
   margin: 0 0 10px;
@@ -252,7 +252,7 @@ function padTimer(value: number): string {
 }
 
 .cooking-step {
-  background: var(--lb-surface);
+  background: var(--hc-surface);
   border-radius: 8px;
   display: grid;
   gap: 12px;
@@ -260,8 +260,8 @@ function padTimer(value: number): string {
 }
 
 .cooking-step.is-complete {
-  background: var(--lb-section);
-  color: var(--lb-muted);
+  background: var(--hc-section);
+  color: var(--hc-muted);
 }
 
 .cooking-step.is-complete .step-check span {
@@ -290,7 +290,7 @@ function padTimer(value: number): string {
 }
 
 .timer-readout {
-  color: var(--lb-warm);
+  color: var(--hc-warm);
   font-variant-numeric: tabular-nums;
   font-weight: 850;
   min-width: 58px;
@@ -315,7 +315,7 @@ function padTimer(value: number): string {
 }
 
 .empty-cooking-state .material-icons {
-  color: var(--lb-text-soft);
+  color: var(--hc-text-soft);
   font-size: 44px;
 }
 

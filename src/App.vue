@@ -33,6 +33,7 @@ const themeOptions: ThemeOption[] = [
 ]
 
 const allowedThemeIds = new Set(themeOptions.map((theme) => theme.id))
+const THEME_STORAGE_KEY = 'hungry-codex-theme'
 
 const recipes = ref<Recipe[]>([])
 const userCategories = ref<Category[]>([])
@@ -218,7 +219,7 @@ function readInitialTheme(): ThemeId {
     }
 
     const urlTheme = new URLSearchParams(window.location.search).get('theme')
-    const storedTheme = window.localStorage.getItem('localbite-theme')
+    const storedTheme = window.localStorage.getItem(THEME_STORAGE_KEY)
 
     if (urlTheme && allowedThemeIds.has(urlTheme as ThemeId)) {
       return urlTheme as ThemeId
@@ -242,7 +243,7 @@ function selectTheme(themeId: string): void {
   selectedTheme.value = themeId as ThemeId
 
   try {
-    window.localStorage.setItem('localbite-theme', themeId)
+    window.localStorage.setItem(THEME_STORAGE_KEY, themeId)
     const url = new URL(window.location.href)
     url.searchParams.set('theme', themeId)
     window.history.replaceState(null, '', url)
@@ -446,16 +447,16 @@ async function handleSaveRecipe(payload: RecipeFormPayload): Promise<void> {
 
 <style scoped>
 .app-shell {
-  background: var(--lb-topbar-safe);
-  color: var(--lb-text);
+  background: var(--hc-topbar-safe);
+  color: var(--hc-text);
   min-height: 100svh;
 }
 
 .app-body {
   align-items: flex-start;
-  background: var(--lb-bg);
+  background: var(--hc-bg);
   display: flex;
-  min-height: calc(100svh - var(--lb-topbar-total-height));
+  min-height: calc(100svh - var(--hc-topbar-total-height));
 }
 
 .content-area {
@@ -482,7 +483,7 @@ async function handleSaveRecipe(payload: RecipeFormPayload): Promise<void> {
 
 .sort-icon {
   align-items: center;
-  color: var(--lb-text-soft);
+  color: var(--hc-text-soft);
   display: inline-flex;
   height: 38px;
   justify-content: center;

@@ -64,7 +64,7 @@ function submitCategory(): void {
 
 <template>
   <div v-if="show" class="modal-backdrop fade show"></div>
-  <div v-if="show" class="modal localbite-modal show" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="category-modal-title">
+  <div v-if="show" class="modal hungry-codex-modal show" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="category-modal-title">
     <div class="modal-dialog modal-dialog-centered">
       <form class="modal-content" @submit.prevent="submitCategory">
         <div class="modal-header">
@@ -97,16 +97,16 @@ function submitCategory(): void {
 </template>
 
 <style scoped>
-.localbite-modal {
+.hungry-codex-modal {
   display: block;
 }
 
 .btn-success {
-  --bs-btn-bg: var(--lb-accent);
-  --bs-btn-border-color: var(--lb-accent);
-  --bs-btn-hover-bg: var(--lb-accent-dark);
-  --bs-btn-hover-border-color: var(--lb-accent-dark);
-  --bs-btn-active-bg: var(--lb-accent-dark);
-  --bs-btn-active-border-color: var(--lb-accent-dark);
+  --bs-btn-bg: var(--hc-accent);
+  --bs-btn-border-color: var(--hc-accent);
+  --bs-btn-hover-bg: var(--hc-accent-dark);
+  --bs-btn-hover-border-color: var(--hc-accent-dark);
+  --bs-btn-active-bg: var(--hc-accent-dark);
+  --bs-btn-active-border-color: var(--hc-accent-dark);
 }
 </style>

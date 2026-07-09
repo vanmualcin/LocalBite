@@ -3,7 +3,7 @@ const emit = defineEmits<{
   (event: 'toggle-menu'): void
 }>()
 
-const brandIconUrl = `${import.meta.env.BASE_URL}icons/localbite-page-logo-master.svg`
+const brandIconUrl = `${import.meta.env.BASE_URL}icons/hungry-codex-page-logo-master.svg`
 </script>
 
 <template>
@@ -14,7 +14,7 @@ const brandIconUrl = `${import.meta.env.BASE_URL}icons/localbite-page-logo-maste
           <img class="brand-mark" :src="brandIconUrl" alt="" />
         </span>
         <h1 class="brand-title mb-0">
-          <span>LocalBite</span>
+          <span>Hungry Codex</span>
         </h1>
       </div>
 
@@ -32,15 +32,15 @@ const brandIconUrl = `${import.meta.env.BASE_URL}icons/localbite-page-logo-maste
 
 <style scoped>
 .topbar {
-  --topbar-height: var(--lb-topbar-content-height);
+  --topbar-height: var(--hc-topbar-content-height);
   align-items: stretch;
-  background: var(--lb-topbar-safe);
-  border-bottom-color: var(--lb-border) !important;
-  box-shadow: 0 1px 4px var(--lb-shadow-soft);
-  color: var(--lb-text);
+  background: var(--hc-topbar-safe);
+  border-bottom-color: var(--hc-border) !important;
+  box-shadow: 0 1px 4px var(--hc-shadow-soft);
+  color: var(--hc-text);
   display: flex;
-  min-height: var(--lb-topbar-total-height);
-  padding-top: var(--lb-safe-area-top);
+  min-height: var(--hc-topbar-total-height);
+  padding-top: var(--hc-safe-area-top);
   position: sticky;
   top: 0;
   z-index: 1040;
@@ -54,10 +54,10 @@ const brandIconUrl = `${import.meta.env.BASE_URL}icons/localbite-page-logo-maste
 
 .brand-logo-frame {
   align-items: center;
-  background: var(--lb-surface);
-  border: 1px solid var(--lb-border-strong);
+  background: var(--hc-surface);
+  border: 1px solid var(--hc-border-strong);
   border-radius: 10px;
-  box-shadow: 0 1px 4px var(--lb-shadow-soft);
+  box-shadow: 0 1px 4px var(--hc-shadow-soft);
   display: inline-flex;
   flex: 0 0 auto;
   height: 52px;
@@ -83,11 +83,11 @@ const brandIconUrl = `${import.meta.env.BASE_URL}icons/localbite-page-logo-maste
 }
 
 .brand-title span {
-  background: linear-gradient(180deg, var(--lb-text) 0%, var(--lb-accent) 70%, var(--lb-text-soft) 100%);
+  background: linear-gradient(180deg, var(--hc-text) 0%, var(--hc-accent) 70%, var(--hc-text-soft) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 1.65rem;
+  font-size: 1.5rem;
   font-weight: 900;
   letter-spacing: 0;
   white-space: nowrap;
@@ -95,7 +95,7 @@ const brandIconUrl = `${import.meta.env.BASE_URL}icons/localbite-page-logo-maste
 
 .icon-button {
   align-items: center;
-  color: var(--lb-text);
+  color: var(--hc-text);
   display: inline-flex;
   height: 40px;
   justify-content: center;

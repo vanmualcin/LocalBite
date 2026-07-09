@@ -72,10 +72,10 @@ function runAction(action: 'add-category' | 'add-recipe'): void {
 .fab-menu {
   backdrop-filter: saturate(170%) blur(16px);
   -webkit-backdrop-filter: saturate(170%) blur(16px);
-  background: color-mix(in srgb, var(--lb-surface) 92%, transparent);
-  border: 1px solid var(--lb-border);
+  background: color-mix(in srgb, var(--hc-surface) 92%, transparent);
+  border: 1px solid var(--hc-border);
   border-radius: 8px;
-  box-shadow: 0 8px 22px var(--lb-shadow);
+  box-shadow: 0 8px 22px var(--hc-shadow);
   display: grid;
   gap: 8px;
   min-width: 188px;

@@ -1,12 +1,12 @@
-const CACHE_NAME = 'localbite-v0.1.2'
+const CACHE_NAME = 'hungry-codex-v0.1.2'
 const APP_SHELL = [
   './',
   './index.html',
   './manifest.webmanifest',
   './icons/apple-touch-icon.png',
   './icons/favicon-32x32.png',
-  './icons/localbite-icon-master.svg',
-  './icons/localbite-page-logo-master.svg',
+  './icons/hungry-codex-icon-master.svg',
+  './icons/hungry-codex-page-logo-master.svg',
   './icons/pwa-192x192.png',
   './icons/pwa-512x512.png',
   './icons/pwa-maskable-512x512.png',
