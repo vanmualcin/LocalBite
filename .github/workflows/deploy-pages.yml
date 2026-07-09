@@ -38,16 +38,8 @@ jobs:
 
       - name: Configure Vite base path
         run: |
-          repository_name="${GITHUB_REPOSITORY#*/}"
-
-          if [ "$repository_name" = "${GITHUB_REPOSITORY_OWNER}.github.io" ]; then
-            vite_base_path="/"
-          else
-            vite_base_path="/${repository_name}/"
-          fi
-
-          echo "VITE_BASE_PATH=$vite_base_path" >> "$GITHUB_ENV"
-          echo "Using VITE_BASE_PATH=$vite_base_path"
+          echo "VITE_BASE_PATH=/" >> "$GITHUB_ENV"
+          echo "Using VITE_BASE_PATH=/ for the custom domain"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -57,13 +49,13 @@ jobs:
 
       - name: Verify Pages base path
         run: |
-          if grep -Fq "/LocalBite/" dist/index.html; then
-            echo "::error::dist/index.html still references /LocalBite/."
+          if grep -Fq "/HungryCodex/" dist/index.html; then
+            echo "::error::dist/index.html still references the repository path /HungryCodex/."
             exit 1
           fi
 
-          if [ "$VITE_BASE_PATH" != "/" ] && ! grep -Fq "$VITE_BASE_PATH" dist/index.html; then
-            echo "::error::dist/index.html does not reference expected base path $VITE_BASE_PATH."
+          if ! grep -Eq '(src|href)="/[^/"]' dist/index.html; then
+            echo "::error::dist/index.html does not contain root-relative asset paths."
             exit 1
           fi
 
